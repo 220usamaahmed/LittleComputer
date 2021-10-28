@@ -73,3 +73,15 @@ module MUX (
     OR or_gate(Y, and_nSA, and_SB);
 
 endmodule
+
+module DMUX (
+    output X, Y,
+    input S, A
+);
+
+    wire not_S;
+    NOT not_gate(not_S, S);
+    AND and_gate_1(X, not_S, A);
+    AND and_gate_2(Y, S, A);
+
+endmodule
