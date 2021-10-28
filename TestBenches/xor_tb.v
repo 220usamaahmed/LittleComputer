@@ -1,11 +1,11 @@
-`include "nand.v"
+`include "../ElementaryLogicGates.v"
 
-module NAND_tb;
+module XOR_tb;
 
     reg A, B;
     wire Y;
 
-    NAND nand_gate(Y, A, B);
+    XOR xor_gate(Y, A, B);
 
     initial begin
             A = 0; B = 0;
@@ -16,7 +16,7 @@ module NAND_tb;
 
     initial begin
         $monitor ("%t | A = %d | B = %d | Y = %d", $time, A, B, Y);
-        $dumpfile("./nand_dump.vcd");
+        $dumpfile("./DumpFiles/xor_dump.vcd");
         $dumpvars();
     end
 

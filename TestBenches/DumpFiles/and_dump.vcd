@@ -1,0 +1,172 @@
+$date
+	Thu Oct 28 14:43:30 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module AND_tb $end
+$var wire 1 ! Y $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$scope module and_gate $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 ! Y $end
+$var wire 1 $ T $end
+$scope module nand_gate $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 % T $end
+$var wire 1 $ Y $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 $ A $end
+$var wire 1 ! Y $end
+$scope module nand_gate $end
+$var wire 1 $ A $end
+$var wire 1 $ B $end
+$var wire 1 & T $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MUX $end
+$var wire 1 ' A $end
+$var wire 1 ( B $end
+$var wire 1 ) S $end
+$var wire 1 * not_S $end
+$var wire 1 + and_nSA $end
+$var wire 1 , and_SB $end
+$var wire 1 - Y $end
+$scope module and_gate_1 $end
+$var wire 1 ' B $end
+$var wire 1 + Y $end
+$var wire 1 . T $end
+$var wire 1 * A $end
+$scope module nand_gate $end
+$var wire 1 ' B $end
+$var wire 1 / T $end
+$var wire 1 . Y $end
+$var wire 1 * A $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 . A $end
+$var wire 1 + Y $end
+$scope module nand_gate $end
+$var wire 1 . A $end
+$var wire 1 . B $end
+$var wire 1 0 T $end
+$var wire 1 + Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module and_gate_2 $end
+$var wire 1 ) A $end
+$var wire 1 ( B $end
+$var wire 1 , Y $end
+$var wire 1 1 T $end
+$scope module nand_gate $end
+$var wire 1 ) A $end
+$var wire 1 ( B $end
+$var wire 1 2 T $end
+$var wire 1 1 Y $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 1 A $end
+$var wire 1 , Y $end
+$scope module nand_gate $end
+$var wire 1 1 A $end
+$var wire 1 1 B $end
+$var wire 1 3 T $end
+$var wire 1 , Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 ) A $end
+$var wire 1 * Y $end
+$scope module nand_gate $end
+$var wire 1 ) A $end
+$var wire 1 ) B $end
+$var wire 1 4 T $end
+$var wire 1 * Y $end
+$upscope $end
+$upscope $end
+$scope module or_gate $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 5 notB $end
+$var wire 1 6 notA $end
+$var wire 1 - Y $end
+$scope module nand_gate $end
+$var wire 1 7 T $end
+$var wire 1 - Y $end
+$var wire 1 5 B $end
+$var wire 1 6 A $end
+$upscope $end
+$scope module not_gate_1 $end
+$var wire 1 + A $end
+$var wire 1 6 Y $end
+$scope module nand_gate $end
+$var wire 1 + A $end
+$var wire 1 + B $end
+$var wire 1 8 T $end
+$var wire 1 6 Y $end
+$upscope $end
+$upscope $end
+$scope module not_gate_2 $end
+$var wire 1 , A $end
+$var wire 1 5 Y $end
+$scope module nand_gate $end
+$var wire 1 , A $end
+$var wire 1 , B $end
+$var wire 1 9 T $end
+$var wire 1 5 Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+z)
+z(
+z'
+1&
+0%
+1$
+0#
+0"
+0!
+$end
+#1
+1#
+#2
+0#
+1"
+#3
+1!
+0&
+0$
+1%
+1#

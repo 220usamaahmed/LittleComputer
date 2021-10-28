@@ -1,11 +1,11 @@
-`include "and.v"
+`include "../ElementaryLogicGates.v"
 
-module AND_tb;
+module OR_tb;
 
     reg A, B;
     wire Y;
 
-    AND and_gate(Y, A, B);
+    OR or_gate(Y, A, B);
 
     initial begin
             A = 0; B = 0;
@@ -16,7 +16,7 @@ module AND_tb;
 
     initial begin
         $monitor ("%t | A = %d | B = %d | Y = %d", $time, A, B, Y);
-        $dumpfile("./and_dump.vcd");
+        $dumpfile("./DumpFiles/or_dump.vcd");
         $dumpvars();
     end
 

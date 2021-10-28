@@ -1,11 +1,11 @@
-`include "or.v"
+`include "../ElementaryLogicGates.v"
 
-module OR_tb;
+module NAND_tb;
 
     reg A, B;
     wire Y;
 
-    OR or_gate(Y, A, B);
+    NAND nand_gate(Y, A, B);
 
     initial begin
             A = 0; B = 0;
@@ -16,7 +16,7 @@ module OR_tb;
 
     initial begin
         $monitor ("%t | A = %d | B = %d | Y = %d", $time, A, B, Y);
-        $dumpfile("./or_dump.vcd");
+        $dumpfile("./DumpFiles/nand_dump.vcd");
         $dumpvars();
     end
 

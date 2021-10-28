@@ -1,4 +1,4 @@
-`include "not.v"
+`include "../ElementaryLogicGates.v"
 
 module NOT_tb;
 
@@ -14,7 +14,7 @@ module NOT_tb;
 
     initial begin
         $monitor ("%t | A = %d | Y = %d", $time, A, Y);
-        $dumpfile("./not_dump.vcd");
+        $dumpfile("./DumpFiles/not_dump.vcd");
         $dumpvars();
     end
 

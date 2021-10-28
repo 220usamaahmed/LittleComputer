@@ -1,11 +1,11 @@
-`include "xor.v"
+`include "../ElementaryLogicGates.v"
 
-module XOR_tb;
+module AND_tb;
 
     reg A, B;
     wire Y;
 
-    XOR xor_gate(Y, A, B);
+    AND and_gate(Y, A, B);
 
     initial begin
             A = 0; B = 0;
@@ -16,7 +16,7 @@ module XOR_tb;
 
     initial begin
         $monitor ("%t | A = %d | B = %d | Y = %d", $time, A, B, Y);
-        $dumpfile("./xor_dump.vcd");
+        $dumpfile("./DumpFiles/and_dump.vcd");
         $dumpvars();
     end
 
