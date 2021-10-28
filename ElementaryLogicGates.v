@@ -129,3 +129,28 @@ module OR16 (Y, A, B);
     endgenerate
 
 endmodule
+
+module MUX16 (Y, S, A, B);
+
+    input S;
+    input [15:0] A;
+    input [15:0] B;
+    output [15:0] Y;
+
+    wire not_S;
+    wire [15:0] and_nSA;
+    wire [15:0] and_SB;
+
+    NOT not_gate(not_S, S);
+
+    genvar i;
+    generate
+        for (i = 0; i < 16; i = i + 1) begin
+            AND and_gate_1(and_nSA[i], not_S, A[i]);
+            AND and_gate_2(and_SB[i], S, B[i]);
+        end
+    endgenerate
+
+    OR16 or_gate(Y, and_nSA, and_SB);
+
+endmodule
