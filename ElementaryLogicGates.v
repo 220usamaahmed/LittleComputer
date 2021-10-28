@@ -172,3 +172,31 @@ module OR8WAY (Y, A);
     OR or_gate_7(Y, or_0123, or_4567);
 
 endmodule
+
+module MUX4WAY16 (Y, S, A, B, C, D);
+
+    input [1:0] S;
+    input [15:0] A, B, C, D;
+    output [15:0] Y;
+
+    wire [15:0] T1, T2;
+
+    MUX16 mux16_gate_1(T1, S[0], A, B);
+    MUX16 mux16_gate_2(T2, S[0], C, D);
+    MUX16 mux16_gate_3(Y, S[1], T1, T2);
+
+endmodule
+
+module MUX8WAY16 (Y, S, A, B, C, D, E, F, G, H);
+
+    input [2:0] S;
+    input [15:0] A, B, C, D, E, F, G, H;
+    output [15:0] Y;
+
+    wire [15:0] T1, T2;
+
+    MUX4WAY16 mux4way16_gate_1(T1, S[1:0], A, B, C, D);
+    MUX4WAY16 mux4way16_gate_2(T2, S[1:0], E, F, G, H);
+    MUX16 mux16_gate(Y, S[2], T1, T2);
+
+endmodule
