@@ -154,3 +154,21 @@ module MUX16 (Y, S, A, B);
     OR16 or_gate(Y, and_nSA, and_SB);
 
 endmodule
+
+module OR8WAY (Y, A);
+
+    input [7:0] A;
+    output Y;
+
+    wire or_01, or_23, or_45, or_67, or_0123, or_4567;
+    OR or_gate_1(or_01, A[0], A[1]);
+    OR or_gate_2(or_23, A[2], A[3]);
+    OR or_gate_3(or_45, A[4], A[5]);
+    OR or_gate_4(or_67, A[6], A[7]);
+    
+    OR or_gate_5(or_0123, or_01, or_23);
+    OR or_gate_6(or_4567, or_45, or_67);
+
+    OR or_gate_7(Y, or_0123, or_4567);
+
+endmodule
