@@ -200,3 +200,31 @@ module MUX8WAY16 (Y, S, A, B, C, D, E, F, G, H);
     MUX16 mux16_gate(Y, S[2], T1, T2);
 
 endmodule
+
+module DMUX4WAY (Y0, Y1, Y2, Y3, S, A);
+
+    input [1:0] S;
+    input A;
+    output Y0, Y1, Y2, Y3;
+
+    wire T1, T2;
+
+    DMUX dmux_gate_1(T1, T2, S[1], A);
+    DMUX dmux_gate_2(Y0, Y1, S[0], T1);
+    DMUX dmux_gate_3(Y2, Y3, S[0], T2);
+
+endmodule
+
+module DMUX8WAY (Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7, S, A);
+
+    input [2:0] S;
+    input A;
+    output Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7;
+
+    wire T1, T2;
+
+    DMUX dmux_gate(T1, T2, S[2], A);
+    DMUX4WAY dmux4way_gate_1(Y0, Y1, Y2, Y3, S[1:0], T1);
+    DMUX4WAY dmux4way_gate_2(Y4, Y5, Y6, Y7, S[1:0], T2);
+
+endmodule
