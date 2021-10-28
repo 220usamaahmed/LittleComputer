@@ -1,5 +1,5 @@
 $date
-	Thu Oct 28 16:10:31 2021
+	Thu Oct 28 16:09:57 2021
 $end
 $version
 	Icarus Verilog
@@ -7,568 +7,561 @@ $end
 $timescale
 	1s
 $end
-$scope module AND16 $end
-$var wire 16 ! A [15:0] $end
-$var wire 16 " B [15:0] $end
-$var wire 16 # Y [15:0] $end
+$scope module AND16_tb $end
+$var wire 16 ! Y [15:0] $end
+$var reg 16 " A [15:0] $end
+$var reg 16 # B [15:0] $end
+$scope module and16_gate $end
+$var wire 16 $ A [15:0] $end
+$var wire 16 % B [15:0] $end
+$var wire 16 & Y [15:0] $end
 $scope begin genblk1[0] $end
 $scope module and_gate $end
-$var wire 1 $ A $end
-$var wire 1 % B $end
-$var wire 1 & Y $end
-$var wire 1 ' T $end
+$var wire 1 ' A $end
+$var wire 1 ( B $end
+$var wire 1 ) Y $end
+$var wire 1 * T $end
 $scope module nand_gate $end
-$var wire 1 $ A $end
-$var wire 1 % B $end
-$var wire 1 ( T $end
-$var wire 1 ' Y $end
+$var wire 1 ' A $end
+$var wire 1 ( B $end
+$var wire 1 + T $end
+$var wire 1 * Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 ' A $end
-$var wire 1 & Y $end
+$var wire 1 * A $end
+$var wire 1 ) Y $end
 $scope module nand_gate $end
-$var wire 1 ' A $end
-$var wire 1 ' B $end
-$var wire 1 ) T $end
-$var wire 1 & Y $end
+$var wire 1 * A $end
+$var wire 1 * B $end
+$var wire 1 , T $end
+$var wire 1 ) Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[1] $end
 $scope module and_gate $end
-$var wire 1 * A $end
-$var wire 1 + B $end
-$var wire 1 , Y $end
-$var wire 1 - T $end
+$var wire 1 - A $end
+$var wire 1 . B $end
+$var wire 1 / Y $end
+$var wire 1 0 T $end
 $scope module nand_gate $end
-$var wire 1 * A $end
-$var wire 1 + B $end
-$var wire 1 . T $end
-$var wire 1 - Y $end
+$var wire 1 - A $end
+$var wire 1 . B $end
+$var wire 1 1 T $end
+$var wire 1 0 Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 - A $end
-$var wire 1 , Y $end
+$var wire 1 0 A $end
+$var wire 1 / Y $end
 $scope module nand_gate $end
-$var wire 1 - A $end
-$var wire 1 - B $end
-$var wire 1 / T $end
-$var wire 1 , Y $end
+$var wire 1 0 A $end
+$var wire 1 0 B $end
+$var wire 1 2 T $end
+$var wire 1 / Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[2] $end
 $scope module and_gate $end
-$var wire 1 0 A $end
-$var wire 1 1 B $end
-$var wire 1 2 Y $end
-$var wire 1 3 T $end
+$var wire 1 3 A $end
+$var wire 1 4 B $end
+$var wire 1 5 Y $end
+$var wire 1 6 T $end
 $scope module nand_gate $end
-$var wire 1 0 A $end
-$var wire 1 1 B $end
-$var wire 1 4 T $end
-$var wire 1 3 Y $end
+$var wire 1 3 A $end
+$var wire 1 4 B $end
+$var wire 1 7 T $end
+$var wire 1 6 Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 3 A $end
-$var wire 1 2 Y $end
+$var wire 1 6 A $end
+$var wire 1 5 Y $end
 $scope module nand_gate $end
-$var wire 1 3 A $end
-$var wire 1 3 B $end
-$var wire 1 5 T $end
-$var wire 1 2 Y $end
+$var wire 1 6 A $end
+$var wire 1 6 B $end
+$var wire 1 8 T $end
+$var wire 1 5 Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[3] $end
 $scope module and_gate $end
-$var wire 1 6 A $end
-$var wire 1 7 B $end
-$var wire 1 8 Y $end
-$var wire 1 9 T $end
+$var wire 1 9 A $end
+$var wire 1 : B $end
+$var wire 1 ; Y $end
+$var wire 1 < T $end
 $scope module nand_gate $end
-$var wire 1 6 A $end
-$var wire 1 7 B $end
-$var wire 1 : T $end
-$var wire 1 9 Y $end
+$var wire 1 9 A $end
+$var wire 1 : B $end
+$var wire 1 = T $end
+$var wire 1 < Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 9 A $end
-$var wire 1 8 Y $end
+$var wire 1 < A $end
+$var wire 1 ; Y $end
 $scope module nand_gate $end
-$var wire 1 9 A $end
-$var wire 1 9 B $end
-$var wire 1 ; T $end
-$var wire 1 8 Y $end
+$var wire 1 < A $end
+$var wire 1 < B $end
+$var wire 1 > T $end
+$var wire 1 ; Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[4] $end
 $scope module and_gate $end
-$var wire 1 < A $end
-$var wire 1 = B $end
-$var wire 1 > Y $end
-$var wire 1 ? T $end
+$var wire 1 ? A $end
+$var wire 1 @ B $end
+$var wire 1 A Y $end
+$var wire 1 B T $end
 $scope module nand_gate $end
-$var wire 1 < A $end
-$var wire 1 = B $end
-$var wire 1 @ T $end
-$var wire 1 ? Y $end
+$var wire 1 ? A $end
+$var wire 1 @ B $end
+$var wire 1 C T $end
+$var wire 1 B Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 ? A $end
-$var wire 1 > Y $end
+$var wire 1 B A $end
+$var wire 1 A Y $end
 $scope module nand_gate $end
-$var wire 1 ? A $end
-$var wire 1 ? B $end
-$var wire 1 A T $end
-$var wire 1 > Y $end
+$var wire 1 B A $end
+$var wire 1 B B $end
+$var wire 1 D T $end
+$var wire 1 A Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[5] $end
 $scope module and_gate $end
-$var wire 1 B A $end
-$var wire 1 C B $end
-$var wire 1 D Y $end
-$var wire 1 E T $end
+$var wire 1 E A $end
+$var wire 1 F B $end
+$var wire 1 G Y $end
+$var wire 1 H T $end
 $scope module nand_gate $end
-$var wire 1 B A $end
-$var wire 1 C B $end
-$var wire 1 F T $end
-$var wire 1 E Y $end
+$var wire 1 E A $end
+$var wire 1 F B $end
+$var wire 1 I T $end
+$var wire 1 H Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 E A $end
-$var wire 1 D Y $end
+$var wire 1 H A $end
+$var wire 1 G Y $end
 $scope module nand_gate $end
-$var wire 1 E A $end
-$var wire 1 E B $end
-$var wire 1 G T $end
-$var wire 1 D Y $end
+$var wire 1 H A $end
+$var wire 1 H B $end
+$var wire 1 J T $end
+$var wire 1 G Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[6] $end
 $scope module and_gate $end
-$var wire 1 H A $end
-$var wire 1 I B $end
-$var wire 1 J Y $end
-$var wire 1 K T $end
+$var wire 1 K A $end
+$var wire 1 L B $end
+$var wire 1 M Y $end
+$var wire 1 N T $end
 $scope module nand_gate $end
-$var wire 1 H A $end
-$var wire 1 I B $end
-$var wire 1 L T $end
-$var wire 1 K Y $end
+$var wire 1 K A $end
+$var wire 1 L B $end
+$var wire 1 O T $end
+$var wire 1 N Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 K A $end
-$var wire 1 J Y $end
+$var wire 1 N A $end
+$var wire 1 M Y $end
 $scope module nand_gate $end
-$var wire 1 K A $end
-$var wire 1 K B $end
-$var wire 1 M T $end
-$var wire 1 J Y $end
+$var wire 1 N A $end
+$var wire 1 N B $end
+$var wire 1 P T $end
+$var wire 1 M Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[7] $end
 $scope module and_gate $end
-$var wire 1 N A $end
-$var wire 1 O B $end
-$var wire 1 P Y $end
-$var wire 1 Q T $end
+$var wire 1 Q A $end
+$var wire 1 R B $end
+$var wire 1 S Y $end
+$var wire 1 T T $end
 $scope module nand_gate $end
-$var wire 1 N A $end
-$var wire 1 O B $end
-$var wire 1 R T $end
-$var wire 1 Q Y $end
+$var wire 1 Q A $end
+$var wire 1 R B $end
+$var wire 1 U T $end
+$var wire 1 T Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 Q A $end
-$var wire 1 P Y $end
+$var wire 1 T A $end
+$var wire 1 S Y $end
 $scope module nand_gate $end
-$var wire 1 Q A $end
-$var wire 1 Q B $end
-$var wire 1 S T $end
-$var wire 1 P Y $end
+$var wire 1 T A $end
+$var wire 1 T B $end
+$var wire 1 V T $end
+$var wire 1 S Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[8] $end
 $scope module and_gate $end
-$var wire 1 T A $end
-$var wire 1 U B $end
-$var wire 1 V Y $end
-$var wire 1 W T $end
+$var wire 1 W A $end
+$var wire 1 X B $end
+$var wire 1 Y Y $end
+$var wire 1 Z T $end
 $scope module nand_gate $end
-$var wire 1 T A $end
-$var wire 1 U B $end
-$var wire 1 X T $end
-$var wire 1 W Y $end
+$var wire 1 W A $end
+$var wire 1 X B $end
+$var wire 1 [ T $end
+$var wire 1 Z Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 W A $end
-$var wire 1 V Y $end
+$var wire 1 Z A $end
+$var wire 1 Y Y $end
 $scope module nand_gate $end
-$var wire 1 W A $end
-$var wire 1 W B $end
-$var wire 1 Y T $end
-$var wire 1 V Y $end
+$var wire 1 Z A $end
+$var wire 1 Z B $end
+$var wire 1 \ T $end
+$var wire 1 Y Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[9] $end
 $scope module and_gate $end
-$var wire 1 Z A $end
-$var wire 1 [ B $end
-$var wire 1 \ Y $end
-$var wire 1 ] T $end
+$var wire 1 ] A $end
+$var wire 1 ^ B $end
+$var wire 1 _ Y $end
+$var wire 1 ` T $end
 $scope module nand_gate $end
-$var wire 1 Z A $end
-$var wire 1 [ B $end
-$var wire 1 ^ T $end
-$var wire 1 ] Y $end
+$var wire 1 ] A $end
+$var wire 1 ^ B $end
+$var wire 1 a T $end
+$var wire 1 ` Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 ] A $end
-$var wire 1 \ Y $end
+$var wire 1 ` A $end
+$var wire 1 _ Y $end
 $scope module nand_gate $end
-$var wire 1 ] A $end
-$var wire 1 ] B $end
-$var wire 1 _ T $end
-$var wire 1 \ Y $end
+$var wire 1 ` A $end
+$var wire 1 ` B $end
+$var wire 1 b T $end
+$var wire 1 _ Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[10] $end
 $scope module and_gate $end
-$var wire 1 ` A $end
-$var wire 1 a B $end
-$var wire 1 b Y $end
-$var wire 1 c T $end
+$var wire 1 c A $end
+$var wire 1 d B $end
+$var wire 1 e Y $end
+$var wire 1 f T $end
 $scope module nand_gate $end
-$var wire 1 ` A $end
-$var wire 1 a B $end
-$var wire 1 d T $end
-$var wire 1 c Y $end
+$var wire 1 c A $end
+$var wire 1 d B $end
+$var wire 1 g T $end
+$var wire 1 f Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 c A $end
-$var wire 1 b Y $end
+$var wire 1 f A $end
+$var wire 1 e Y $end
 $scope module nand_gate $end
-$var wire 1 c A $end
-$var wire 1 c B $end
-$var wire 1 e T $end
-$var wire 1 b Y $end
+$var wire 1 f A $end
+$var wire 1 f B $end
+$var wire 1 h T $end
+$var wire 1 e Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[11] $end
 $scope module and_gate $end
-$var wire 1 f A $end
-$var wire 1 g B $end
-$var wire 1 h Y $end
-$var wire 1 i T $end
+$var wire 1 i A $end
+$var wire 1 j B $end
+$var wire 1 k Y $end
+$var wire 1 l T $end
 $scope module nand_gate $end
-$var wire 1 f A $end
-$var wire 1 g B $end
-$var wire 1 j T $end
-$var wire 1 i Y $end
+$var wire 1 i A $end
+$var wire 1 j B $end
+$var wire 1 m T $end
+$var wire 1 l Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 i A $end
-$var wire 1 h Y $end
+$var wire 1 l A $end
+$var wire 1 k Y $end
 $scope module nand_gate $end
-$var wire 1 i A $end
-$var wire 1 i B $end
-$var wire 1 k T $end
-$var wire 1 h Y $end
+$var wire 1 l A $end
+$var wire 1 l B $end
+$var wire 1 n T $end
+$var wire 1 k Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[12] $end
 $scope module and_gate $end
-$var wire 1 l A $end
-$var wire 1 m B $end
-$var wire 1 n Y $end
-$var wire 1 o T $end
+$var wire 1 o A $end
+$var wire 1 p B $end
+$var wire 1 q Y $end
+$var wire 1 r T $end
 $scope module nand_gate $end
-$var wire 1 l A $end
-$var wire 1 m B $end
-$var wire 1 p T $end
-$var wire 1 o Y $end
+$var wire 1 o A $end
+$var wire 1 p B $end
+$var wire 1 s T $end
+$var wire 1 r Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 o A $end
-$var wire 1 n Y $end
+$var wire 1 r A $end
+$var wire 1 q Y $end
 $scope module nand_gate $end
-$var wire 1 o A $end
-$var wire 1 o B $end
-$var wire 1 q T $end
-$var wire 1 n Y $end
+$var wire 1 r A $end
+$var wire 1 r B $end
+$var wire 1 t T $end
+$var wire 1 q Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[13] $end
 $scope module and_gate $end
-$var wire 1 r A $end
-$var wire 1 s B $end
-$var wire 1 t Y $end
-$var wire 1 u T $end
+$var wire 1 u A $end
+$var wire 1 v B $end
+$var wire 1 w Y $end
+$var wire 1 x T $end
 $scope module nand_gate $end
-$var wire 1 r A $end
-$var wire 1 s B $end
-$var wire 1 v T $end
-$var wire 1 u Y $end
+$var wire 1 u A $end
+$var wire 1 v B $end
+$var wire 1 y T $end
+$var wire 1 x Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 u A $end
-$var wire 1 t Y $end
+$var wire 1 x A $end
+$var wire 1 w Y $end
 $scope module nand_gate $end
-$var wire 1 u A $end
-$var wire 1 u B $end
-$var wire 1 w T $end
-$var wire 1 t Y $end
+$var wire 1 x A $end
+$var wire 1 x B $end
+$var wire 1 z T $end
+$var wire 1 w Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[14] $end
 $scope module and_gate $end
-$var wire 1 x A $end
-$var wire 1 y B $end
-$var wire 1 z Y $end
-$var wire 1 { T $end
+$var wire 1 { A $end
+$var wire 1 | B $end
+$var wire 1 } Y $end
+$var wire 1 ~ T $end
 $scope module nand_gate $end
-$var wire 1 x A $end
-$var wire 1 y B $end
-$var wire 1 | T $end
-$var wire 1 { Y $end
+$var wire 1 { A $end
+$var wire 1 | B $end
+$var wire 1 !" T $end
+$var wire 1 ~ Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 { A $end
-$var wire 1 z Y $end
+$var wire 1 ~ A $end
+$var wire 1 } Y $end
 $scope module nand_gate $end
-$var wire 1 { A $end
-$var wire 1 { B $end
-$var wire 1 } T $end
-$var wire 1 z Y $end
+$var wire 1 ~ A $end
+$var wire 1 ~ B $end
+$var wire 1 "" T $end
+$var wire 1 } Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[15] $end
 $scope module and_gate $end
-$var wire 1 ~ A $end
-$var wire 1 !" B $end
-$var wire 1 "" Y $end
-$var wire 1 #" T $end
+$var wire 1 #" A $end
+$var wire 1 $" B $end
+$var wire 1 %" Y $end
+$var wire 1 &" T $end
 $scope module nand_gate $end
-$var wire 1 ~ A $end
-$var wire 1 !" B $end
-$var wire 1 $" T $end
-$var wire 1 #" Y $end
+$var wire 1 #" A $end
+$var wire 1 $" B $end
+$var wire 1 '" T $end
+$var wire 1 &" Y $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 #" A $end
-$var wire 1 "" Y $end
+$var wire 1 &" A $end
+$var wire 1 %" Y $end
 $scope module nand_gate $end
-$var wire 1 #" A $end
-$var wire 1 #" B $end
-$var wire 1 %" T $end
-$var wire 1 "" Y $end
+$var wire 1 &" A $end
+$var wire 1 &" B $end
+$var wire 1 (" T $end
+$var wire 1 %" Y $end
+$upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module DMUX $end
-$var wire 1 &" A $end
-$var wire 1 '" S $end
-$var wire 1 (" not_S $end
-$var wire 1 )" Y $end
-$var wire 1 *" X $end
+$var wire 1 )" A $end
+$var wire 1 *" S $end
+$var wire 1 +" not_S $end
+$var wire 1 ," Y $end
+$var wire 1 -" X $end
 $scope module and_gate_1 $end
-$var wire 1 &" B $end
-$var wire 1 *" Y $end
-$var wire 1 +" T $end
-$var wire 1 (" A $end
-$scope module nand_gate $end
-$var wire 1 &" B $end
-$var wire 1 ," T $end
-$var wire 1 +" Y $end
-$var wire 1 (" A $end
-$upscope $end
-$scope module not_gate $end
-$var wire 1 +" A $end
-$var wire 1 *" Y $end
-$scope module nand_gate $end
-$var wire 1 +" A $end
-$var wire 1 +" B $end
-$var wire 1 -" T $end
-$var wire 1 *" Y $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope module and_gate_2 $end
-$var wire 1 '" A $end
-$var wire 1 &" B $end
-$var wire 1 )" Y $end
+$var wire 1 )" B $end
+$var wire 1 -" Y $end
 $var wire 1 ." T $end
+$var wire 1 +" A $end
 $scope module nand_gate $end
-$var wire 1 '" A $end
-$var wire 1 &" B $end
+$var wire 1 )" B $end
 $var wire 1 /" T $end
 $var wire 1 ." Y $end
+$var wire 1 +" A $end
 $upscope $end
 $scope module not_gate $end
 $var wire 1 ." A $end
-$var wire 1 )" Y $end
+$var wire 1 -" Y $end
 $scope module nand_gate $end
 $var wire 1 ." A $end
 $var wire 1 ." B $end
 $var wire 1 0" T $end
-$var wire 1 )" Y $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope module not_gate $end
-$var wire 1 '" A $end
-$var wire 1 (" Y $end
-$scope module nand_gate $end
-$var wire 1 '" A $end
-$var wire 1 '" B $end
-$var wire 1 1" T $end
-$var wire 1 (" Y $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope module MUX $end
-$var wire 1 2" A $end
-$var wire 1 3" B $end
-$var wire 1 4" S $end
-$var wire 1 5" not_S $end
-$var wire 1 6" and_nSA $end
-$var wire 1 7" and_SB $end
-$var wire 1 8" Y $end
-$scope module and_gate_1 $end
-$var wire 1 2" B $end
-$var wire 1 6" Y $end
-$var wire 1 9" T $end
-$var wire 1 5" A $end
-$scope module nand_gate $end
-$var wire 1 2" B $end
-$var wire 1 :" T $end
-$var wire 1 9" Y $end
-$var wire 1 5" A $end
-$upscope $end
-$scope module not_gate $end
-$var wire 1 9" A $end
-$var wire 1 6" Y $end
-$scope module nand_gate $end
-$var wire 1 9" A $end
-$var wire 1 9" B $end
-$var wire 1 ;" T $end
-$var wire 1 6" Y $end
+$var wire 1 -" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module and_gate_2 $end
-$var wire 1 4" A $end
-$var wire 1 3" B $end
-$var wire 1 7" Y $end
-$var wire 1 <" T $end
+$var wire 1 *" A $end
+$var wire 1 )" B $end
+$var wire 1 ," Y $end
+$var wire 1 1" T $end
 $scope module nand_gate $end
-$var wire 1 4" A $end
-$var wire 1 3" B $end
+$var wire 1 *" A $end
+$var wire 1 )" B $end
+$var wire 1 2" T $end
+$var wire 1 1" Y $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 1" A $end
+$var wire 1 ," Y $end
+$scope module nand_gate $end
+$var wire 1 1" A $end
+$var wire 1 1" B $end
+$var wire 1 3" T $end
+$var wire 1 ," Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 *" A $end
+$var wire 1 +" Y $end
+$scope module nand_gate $end
+$var wire 1 *" A $end
+$var wire 1 *" B $end
+$var wire 1 4" T $end
+$var wire 1 +" Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MUX $end
+$var wire 1 5" A $end
+$var wire 1 6" B $end
+$var wire 1 7" S $end
+$var wire 1 8" not_S $end
+$var wire 1 9" and_nSA $end
+$var wire 1 :" and_SB $end
+$var wire 1 ;" Y $end
+$scope module and_gate_1 $end
+$var wire 1 5" B $end
+$var wire 1 9" Y $end
+$var wire 1 <" T $end
+$var wire 1 8" A $end
+$scope module nand_gate $end
+$var wire 1 5" B $end
 $var wire 1 =" T $end
 $var wire 1 <" Y $end
+$var wire 1 8" A $end
 $upscope $end
 $scope module not_gate $end
 $var wire 1 <" A $end
-$var wire 1 7" Y $end
+$var wire 1 9" Y $end
 $scope module nand_gate $end
 $var wire 1 <" A $end
 $var wire 1 <" B $end
 $var wire 1 >" T $end
-$var wire 1 7" Y $end
+$var wire 1 9" Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module and_gate_2 $end
+$var wire 1 7" A $end
+$var wire 1 6" B $end
+$var wire 1 :" Y $end
+$var wire 1 ?" T $end
+$scope module nand_gate $end
+$var wire 1 7" A $end
+$var wire 1 6" B $end
+$var wire 1 @" T $end
+$var wire 1 ?" Y $end
+$upscope $end
+$scope module not_gate $end
+$var wire 1 ?" A $end
+$var wire 1 :" Y $end
+$scope module nand_gate $end
+$var wire 1 ?" A $end
+$var wire 1 ?" B $end
+$var wire 1 A" T $end
+$var wire 1 :" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module not_gate $end
-$var wire 1 4" A $end
-$var wire 1 5" Y $end
+$var wire 1 7" A $end
+$var wire 1 8" Y $end
 $scope module nand_gate $end
-$var wire 1 4" A $end
-$var wire 1 4" B $end
-$var wire 1 ?" T $end
-$var wire 1 5" Y $end
+$var wire 1 7" A $end
+$var wire 1 7" B $end
+$var wire 1 B" T $end
+$var wire 1 8" Y $end
 $upscope $end
 $upscope $end
 $scope module or_gate $end
-$var wire 1 6" A $end
-$var wire 1 7" B $end
-$var wire 1 @" notB $end
-$var wire 1 A" notA $end
-$var wire 1 8" Y $end
+$var wire 1 9" A $end
+$var wire 1 :" B $end
+$var wire 1 C" notB $end
+$var wire 1 D" notA $end
+$var wire 1 ;" Y $end
 $scope module nand_gate $end
-$var wire 1 B" T $end
-$var wire 1 8" Y $end
-$var wire 1 @" B $end
-$var wire 1 A" A $end
+$var wire 1 E" T $end
+$var wire 1 ;" Y $end
+$var wire 1 C" B $end
+$var wire 1 D" A $end
 $upscope $end
 $scope module not_gate_1 $end
-$var wire 1 6" A $end
-$var wire 1 A" Y $end
+$var wire 1 9" A $end
+$var wire 1 D" Y $end
 $scope module nand_gate $end
-$var wire 1 6" A $end
-$var wire 1 6" B $end
-$var wire 1 C" T $end
-$var wire 1 A" Y $end
+$var wire 1 9" A $end
+$var wire 1 9" B $end
+$var wire 1 F" T $end
+$var wire 1 D" Y $end
 $upscope $end
 $upscope $end
 $scope module not_gate_2 $end
-$var wire 1 7" A $end
-$var wire 1 @" Y $end
+$var wire 1 :" A $end
+$var wire 1 C" Y $end
 $scope module nand_gate $end
-$var wire 1 7" A $end
-$var wire 1 7" B $end
-$var wire 1 D" T $end
-$var wire 1 @" Y $end
+$var wire 1 :" A $end
+$var wire 1 :" B $end
+$var wire 1 G" T $end
+$var wire 1 C" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module NOT16 $end
-$var wire 16 E" A [15:0] $end
-$var wire 16 F" Y [15:0] $end
+$var wire 16 H" A [15:0] $end
+$var wire 16 I" Y [15:0] $end
 $scope begin genblk1[0] $end
-$scope module not_gate $end
-$var wire 1 G" A $end
-$var wire 1 H" Y $end
-$scope module nand_gate $end
-$var wire 1 G" A $end
-$var wire 1 G" B $end
-$var wire 1 I" T $end
-$var wire 1 H" Y $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin genblk1[1] $end
 $scope module not_gate $end
 $var wire 1 J" A $end
 $var wire 1 K" Y $end
@@ -580,7 +573,7 @@ $var wire 1 K" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[2] $end
+$scope begin genblk1[1] $end
 $scope module not_gate $end
 $var wire 1 M" A $end
 $var wire 1 N" Y $end
@@ -592,7 +585,7 @@ $var wire 1 N" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[3] $end
+$scope begin genblk1[2] $end
 $scope module not_gate $end
 $var wire 1 P" A $end
 $var wire 1 Q" Y $end
@@ -604,7 +597,7 @@ $var wire 1 Q" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[4] $end
+$scope begin genblk1[3] $end
 $scope module not_gate $end
 $var wire 1 S" A $end
 $var wire 1 T" Y $end
@@ -616,7 +609,7 @@ $var wire 1 T" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[5] $end
+$scope begin genblk1[4] $end
 $scope module not_gate $end
 $var wire 1 V" A $end
 $var wire 1 W" Y $end
@@ -628,7 +621,7 @@ $var wire 1 W" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[6] $end
+$scope begin genblk1[5] $end
 $scope module not_gate $end
 $var wire 1 Y" A $end
 $var wire 1 Z" Y $end
@@ -640,7 +633,7 @@ $var wire 1 Z" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[7] $end
+$scope begin genblk1[6] $end
 $scope module not_gate $end
 $var wire 1 \" A $end
 $var wire 1 ]" Y $end
@@ -652,7 +645,7 @@ $var wire 1 ]" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[8] $end
+$scope begin genblk1[7] $end
 $scope module not_gate $end
 $var wire 1 _" A $end
 $var wire 1 `" Y $end
@@ -664,7 +657,7 @@ $var wire 1 `" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[9] $end
+$scope begin genblk1[8] $end
 $scope module not_gate $end
 $var wire 1 b" A $end
 $var wire 1 c" Y $end
@@ -676,7 +669,7 @@ $var wire 1 c" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[10] $end
+$scope begin genblk1[9] $end
 $scope module not_gate $end
 $var wire 1 e" A $end
 $var wire 1 f" Y $end
@@ -688,7 +681,7 @@ $var wire 1 f" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[11] $end
+$scope begin genblk1[10] $end
 $scope module not_gate $end
 $var wire 1 h" A $end
 $var wire 1 i" Y $end
@@ -700,7 +693,7 @@ $var wire 1 i" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[12] $end
+$scope begin genblk1[11] $end
 $scope module not_gate $end
 $var wire 1 k" A $end
 $var wire 1 l" Y $end
@@ -712,7 +705,7 @@ $var wire 1 l" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[13] $end
+$scope begin genblk1[12] $end
 $scope module not_gate $end
 $var wire 1 n" A $end
 $var wire 1 o" Y $end
@@ -724,7 +717,7 @@ $var wire 1 o" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[14] $end
+$scope begin genblk1[13] $end
 $scope module not_gate $end
 $var wire 1 q" A $end
 $var wire 1 r" Y $end
@@ -736,7 +729,7 @@ $var wire 1 r" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope begin genblk1[15] $end
+$scope begin genblk1[14] $end
 $scope module not_gate $end
 $var wire 1 t" A $end
 $var wire 1 u" Y $end
@@ -748,18 +741,16 @@ $var wire 1 u" Y $end
 $upscope $end
 $upscope $end
 $upscope $end
-$upscope $end
-$scope module NOT_tb $end
-$var wire 1 w" Y $end
-$var reg 1 x" A $end
+$scope begin genblk1[15] $end
 $scope module not_gate $end
-$var wire 1 x" A $end
-$var wire 1 w" Y $end
+$var wire 1 w" A $end
+$var wire 1 x" Y $end
 $scope module nand_gate $end
-$var wire 1 x" A $end
-$var wire 1 x" B $end
+$var wire 1 w" A $end
+$var wire 1 w" B $end
 $var wire 1 y" T $end
-$var wire 1 w" Y $end
+$var wire 1 x" Y $end
+$upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -808,9 +799,9 @@ x}"
 x|"
 z{"
 zz"
-0y"
-0x"
-1w"
+xy"
+xx"
+zw"
 xv"
 xu"
 zt"
@@ -856,11 +847,11 @@ zM"
 xL"
 xK"
 zJ"
-xI"
-xH"
-zG"
-bx F"
-bz E"
+bx I"
+bz H"
+xG"
+xF"
+xE"
 xD"
 xC"
 xB"
@@ -874,12 +865,12 @@ x;"
 x:"
 x9"
 x8"
-x7"
-x6"
-x5"
-z4"
-z3"
-z2"
+z7"
+z6"
+z5"
+x4"
+x3"
+x2"
 x1"
 x0"
 x/"
@@ -887,112 +878,248 @@ x."
 x-"
 x,"
 x+"
-x*"
-x)"
-x("
-z'"
-z&"
-x%"
-x$"
-x#"
-x""
-z!"
-z~
-x}
-x|
-x{
-xz
-zy
-zx
-xw
-xv
-xu
-xt
-zs
-zr
-xq
-xp
-xo
-xn
-zm
-zl
-xk
-xj
-xi
-xh
-zg
-zf
-xe
-xd
-xc
-xb
-za
-z`
-x_
-x^
-x]
-x\
-z[
-zZ
-xY
-xX
-xW
-xV
-zU
-zT
-xS
-xR
-xQ
-xP
-zO
-zN
-xM
-xL
-xK
-xJ
-zI
-zH
-xG
-xF
-xE
-xD
-zC
-zB
-xA
-x@
-x?
-x>
-z=
-z<
-x;
-x:
-x9
-x8
-z7
-z6
-x5
-x4
-x3
-x2
-z1
-z0
-x/
-x.
-x-
-x,
-z+
-z*
-x)
-x(
-x'
-x&
-z%
-z$
-bx #
-bz "
-bz !
+z*"
+z)"
+1("
+0'"
+1&"
+0%"
+0$"
+0#"
+0""
+1!"
+0~
+1}
+1|
+1{
+1z
+0y
+1x
+0w
+0v
+0u
+0t
+1s
+0r
+1q
+1p
+1o
+1n
+0m
+1l
+0k
+0j
+0i
+0h
+1g
+0f
+1e
+1d
+1c
+1b
+0a
+1`
+0_
+0^
+0]
+0\
+1[
+0Z
+1Y
+1X
+1W
+1V
+0U
+1T
+0S
+0R
+0Q
+0P
+1O
+0N
+1M
+1L
+1K
+1J
+0I
+1H
+0G
+0F
+0E
+0D
+1C
+0B
+1A
+1@
+1?
+1>
+0=
+1<
+0;
+0:
+09
+08
+17
+06
+15
+14
+13
+12
+01
+10
+0/
+0.
+0-
+0,
+1+
+0*
+1)
+1(
+1'
+b101010101010101 &
+b101010101010101 %
+b101010101010101 $
+b101010101010101 #
+b101010101010101 "
+b101010101010101 !
 $end
 #1
-0w"
-1y"
-1x"
+0)
+0A
+0Y
+b100010001000100 !
+b100010001000100 &
+0q
+1,
+1D
+1\
+1t
+1*
+1B
+1Z
+1r
+0+
+0C
+0[
+0s
+0'
+19
+0?
+1Q
+0W
+1i
+0o
+1#"
+b1100110011001100 "
+b1100110011001100 $
+#2
+1;
+1S
+1%"
+1)
+1A
+1Y
+b1000010111011101 !
+b1000010111011101 &
+0}
+0>
+0V
+0("
+0,
+0D
+0\
+1""
+0<
+0T
+0&"
+0*
+0B
+0Z
+1~
+1=
+1U
+1'"
+1+
+1C
+1[
+0!"
+1.
+1:
+1F
+1R
+1^
+1j
+1v
+1$"
+1'
+1?
+1W
+0i
+0{
+b1111111111111111 #
+b1111111111111111 %
+b1000010111011101 "
+b1000010111011101 $
+#3
+0)
+05
+0A
+0Y
+0e
+0;
+0M
+0S
+b0 !
+b0 &
+0%"
+1,
+18
+1D
+1\
+1h
+1>
+1P
+1V
+1("
+1*
+16
+1B
+1Z
+1f
+1<
+1N
+1T
+1&"
+0+
+07
+0C
+0[
+0g
+0=
+0O
+0U
+0'"
+0(
+0.
+04
+0:
+0@
+0F
+0L
+0R
+0X
+0^
+0d
+0j
+0p
+0v
+0|
+0$"
+09
+0K
+0Q
+0#"
+b0 #
+b0 %
+b10100010101 "
+b10100010101 $

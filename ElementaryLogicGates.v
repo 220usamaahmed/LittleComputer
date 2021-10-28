@@ -85,3 +85,47 @@ module DMUX (
     AND and_gate_2(Y, S, A);
 
 endmodule
+
+module NOT16 (Y, A);
+
+    input [15:0] A;
+    output [15:0] Y;
+
+    genvar i;
+    generate
+        for (i = 0; i < 16; i = i + 1) begin
+            NOT not_gate(Y[i], A[i]);
+        end
+    endgenerate
+
+endmodule
+
+module AND16 (Y, A, B);
+
+    input [15:0] A;
+    input [15:0] B;
+    output [15:0] Y;
+
+    genvar i;
+    generate
+        for (i = 0; i < 16; i = i + 1) begin
+            AND and_gate(Y[i], A[i], B[i]);
+        end
+    endgenerate
+
+endmodule
+
+module OR16 (Y, A, B);
+
+    input [15:0] A;
+    input [15:0] B;
+    output [15:0] Y;
+
+    genvar i;
+    generate
+        for (i = 0; i < 16; i = i + 1) begin
+            OR or_gate(Y[i], A[i], B[i]);
+        end
+    endgenerate
+
+endmodule
