@@ -2,6 +2,37 @@
 
 Based on the Hack Computer from the [From Nand to Tetris Course](https://www.nand2tetris.org/).
 
+## Progress
+
+The following have been implemented so far
+
+### Elementary Logic Gates
+
+1. NAND
+2. NOT
+3. AND
+4. OR
+5. XOR
+6. MUX
+7. DMUX
+8. NOT16
+9. AND16
+10. OR16
+11. MUX16
+12. OR8WAY
+13. MUX4WAY16
+14. MUX8WAY16
+15. DMUX4WAY
+16. DMUX8WAY
+
+### Arithmetic Units
+
+1. HALFADDER
+2. FULLADDER
+3. ADD16
+4. INC16
+5. ALU
+
 ## Project Structure
 
 ```
