@@ -1,4 +1,4 @@
-// `include "./ElementaryLogicGates.v"
+`include "../ElementaryLogicGates.v"
 
 module HALFADDER (
     output sum, carry, 
