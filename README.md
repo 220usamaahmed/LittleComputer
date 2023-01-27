@@ -33,6 +33,17 @@ The following have been implemented so far
 4. INC16
 5. ALU
 
+### Memory Units
+
+1. BIT
+2. REGISTER
+3. RAM8
+4. RAM64
+5. RAM512
+6. RAM4K
+7. RAM16K
+8. PC
+
 ## Project Structure
 
 ```
