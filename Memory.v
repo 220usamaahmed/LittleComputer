@@ -53,13 +53,13 @@ endmodule
  */
 module REGISTER (OUT, IN, LOAD);
 
-    input [7:0] IN;
+    input [15:0] IN;
     input LOAD;
-    output [7:0] OUT;
+    output [15:0] OUT;
 
     genvar i;
     generate
-        for (i = 0; i < 8; i = i + 1) begin
+        for (i = 0; i < 16; i = i + 1) begin
             BIT bit(OUT[i], IN[i], LOAD);
         end
     endgenerate
