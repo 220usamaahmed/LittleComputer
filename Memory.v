@@ -7,14 +7,19 @@
  * If S == 0, R == 1 then Q[t + 1] = 0
  * S == 0, R == 0 is not used (invalid state)
  */
+`timescale 1ps/1ps
 module SRLATCH(
     output Q, Qn,
     input S, R
 );
-
-NAND nand_gate_1(Q, R, Qn);
-NAND nand_gate_2(Qn, Q, S);
-
+ 
+wire Q_int, Qn_int;
+ 
+assign #1 Q_int = ~(S & Qn_int);
+assign #1 Qn_int = ~(R & Q_int);
+assign Q = Qn_int;
+assign Qn = Q_int;
+ 
 endmodule
 
 /*
@@ -63,5 +68,30 @@ module REGISTER (OUT, IN, LOAD);
             BIT bit(OUT[i], IN[i], LOAD);
         end
     endgenerate
+
+endmodule
+
+module RAM8 (OUT, ADDRESS, IN, LOAD);
+
+    input [2:0] ADDRESS;
+    input [15:0] IN;
+    input LOAD;
+    output [15:0] OUT;
+
+    wire Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7;
+    wire [15:0] OUT0, OUT1, OUT2, OUT3, OUT4, OUT5, OUT6, OUT7;
+
+    DMUX8WAY dmux8way(Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7, ADDRESS, LOAD);
+
+    REGISTER register0(OUT0, IN, Y0);
+    REGISTER register1(OUT1, IN, Y1);
+    REGISTER register2(OUT2, IN, Y2);
+    REGISTER register3(OUT3, IN, Y3);
+    REGISTER register4(OUT4, IN, Y4);
+    REGISTER register5(OUT5, IN, Y5);
+    REGISTER register6(OUT6, IN, Y6);
+    REGISTER register7(OUT7, IN, Y7);
+
+    MUX8WAY16 mux8way16(OUT, ADDRESS, OUT0, OUT1, OUT2, OUT3, OUT4, OUT5, OUT6, OUT7);
 
 endmodule
